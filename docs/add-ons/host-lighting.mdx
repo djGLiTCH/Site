@@ -21,9 +21,10 @@ and the colour order. Host software needs no per-board setup and follows any
 remapping you do in the Web Configurator.
 
 Host software can also change the input profile, the LED animation, its
-speed and the brightness, as the board's hotkeys do, and the codes the
-Keyboard input mode sends for each button. It can switch the input mode and
-restart the board too.
+speed and the brightness, as the board's hotkeys do. It can switch the input
+mode and restart the board too. With `Allow hosts to change the keyboard
+mapping` on, it can also change the codes the Keyboard input mode sends for
+each button, in the active input profile only.
 
 ## Web Configurator Options
 
@@ -38,6 +39,10 @@ restart the board too.
   - `Always On` - The lighting identity from boot. For a PC only. Do not use
     this setting on a console.
   - `Off` - Stock XInput behaviour, with no lighting interface in XInput mode.
+- `Allow hosts to change the keyboard mapping` - Lets host software change
+  the codes the Keyboard input mode sends for each button. A change applies
+  only to the input profile active at the time, and the other profiles keep
+  their codes. Off by default. Host software can read the codes either way.
 
 The lighting interface is available in the XInput, Keyboard, Generic HID and
 SInput input modes. The console modes never expose it.
