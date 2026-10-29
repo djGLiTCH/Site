@@ -60,6 +60,11 @@ The protocol reference for developers of host software is in the firmware
 repository under `docs/host-lighting.md`. It covers the commands, the pages
 a board describes itself with and a typical host flow.
 
+The [gp2040ce-hostlighting](https://github.com/djGLiTCH/gp2040ce-hostlighting)
+library is a reference host for this protocol, with the `hlp` app for Windows,
+macOS and Linux. Its `hlp-conformance` command checks a board against the
+protocol.
+
 In `Auto` XInput lighting mode the lighting interface appears a few seconds
 after plugging into a PC, after a brief reconnect. Host software is expected
 to tolerate this delay.
